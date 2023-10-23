@@ -15,6 +15,7 @@ function App() {
     tg.ready;
   }, [])
 
+  // Создаем две страницы которые будут открываться по двум маршрутам
   return (
     <div className="App">
       <Header />
