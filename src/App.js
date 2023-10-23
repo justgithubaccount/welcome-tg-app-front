@@ -1,21 +1,19 @@
-import { useEffect } from 'react';
 import './App.css';
-
-const tg = window.Telegram.WebApp;
+import { useEffect } from 'react';
+import { useTelegram } from "./hooks/useTelegram";
 
 function App() {
+  // Используем созданный хук 
+  const { tg, onToggleButton } = useTelegram();
+
   // Метод сообщает о том что приложение полностью проинициализировано
   useEffect(() => {
     tg.ready;
   }, [])
 
-  const onClose = () => {
-    tg.close()
-  }
-
   return (
     <div className="App">
-      <button onClick={onClose}>Закрыть</button>
+      <button onClick={onToggleButton}>Toogle</button>
     </div>
   );
 }
