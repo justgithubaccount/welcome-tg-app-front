@@ -8,7 +8,7 @@ import Form from './components/Form/Form';
 
 function App() {
   // Используем созданный хук 
-  const { tg, onToggleButton } = useTelegram();
+  const { tg } = useTelegram();
 
   // Метод сообщает о том что приложение полностью проинициализировано
   useEffect(() => {

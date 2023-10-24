@@ -1,3 +1,6 @@
+// https://core.telegram.org/bots/webapps#initializing-mini-apps
+// https://core.telegram.org/bots/webapps#mainbutton
+
 const tg = window.Telegram.WebApp;
 
 export function useTelegram() {
@@ -19,4 +22,4 @@ export function useTelegram() {
         tg,
         user: tg.initDataUnsafe?.user,
     }
-} 
+}

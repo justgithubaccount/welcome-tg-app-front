@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import './Form.css';
 import { useTelegram } from "../../hooks/useTelegram";
 
+// https://core.telegram.org/bots/webapps#events-available-for-mini-apps
 
 const Form = () => {
     const [country, setCountry] = useState('');
